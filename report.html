@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Issue - Public Service Improvement Platform</title>
+  <link rel="stylesheet" href="Styles/report.css
+  ">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <img class="logo" src="Images/logo.PNG" alt="logo">
+      <div class="Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html">Report an Issue</a></li>
+          <li><a href="track-progress.html">Track Progress</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Report Issue Form Section -->
+  <section class="report-issue">
+    <h1>Report an Issue</h1>
+    <p>Help improve your community by reporting issues directly to local authorities.</p>
+    <form action="#" method="post" class="issue-form">
+      <label for="issue-type">Issue Type:</label>
+      <select id="issue-type" name="issue_type" required>
+        <option value="">Select an issue type</option>
+        <option value="streetlight">Broken Streetlight</option>
+        <option value="pothole">Pothole</option>
+        <option value="water-shortage">Water Shortage</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Enter the location" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" placeholder="Describe the issue" required></textarea>
+
+      <label for="image">Upload Image (Optional):</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Public Service Hub. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="Script/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --heading-font:'Noto Serif', Serif;
+    --paragraph-font:'Roboto', Serif;
+}
+
+
+
+/* Global Reset */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--heading-font);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/*navigation*/
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav .Navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .Navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .Navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 100, 70);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .Navigation ul li a:hover {
+  color: rgb(150, 202, 6);
+
+}
+
+/* Sign Up Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust for header height */
+  }
+  
+  .signup-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .signup-container h2 {
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .login-text a {
+    color: #aed309;
+    text-decoration: underline;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #fff;
+    outline: none;
+  }
+  
+  .signup-button {
+    padding: 10px;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+  }
+  
+  .signup-button:hover {
+    background: green;
+    color: #fff;
+  }
+  
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #f1f1f1;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 2rem;
+    }

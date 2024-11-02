@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Public Service Improvement Platform</title>
+  <link rel="stylesheet" href="Styles/feedback.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <img class="logo" src="Images/logo.PNG" alt="logo">
+      <div class="Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html">Report an Issue</a></li>
+          <li><a href="track-progress.html">Track Progress</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="feedback-section">
+    <h2>We Value Your Feedback</h2>
+    <p>Your feedback helps us improve our services and address public concerns more effectively.</p>
+
+    <!-- Feedback Form -->
+    <form class="feedback-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="category">Feedback Category:</label>
+        <select id="category" name="category" required>
+          <option value="">Select a category</option>
+          <option value="general">General Feedback</option>
+          <option value="report">Issue with Reporting</option>
+          <option value="progress">Issue with Tracking</option>
+          <option value="suggestions">Suggestions</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Share your feedback..."></textarea>
+      </div>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Public Service Hub. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+  <script src="Script/script.js"></script>
+</body>
+</html>

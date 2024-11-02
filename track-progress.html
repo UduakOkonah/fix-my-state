@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Progress - Public Service Improvement Platform</title>
+  <link rel="stylesheet" href="Styles/track.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <img class="logo" src="Images/logo.PNG" alt="logo">
+      <div class="Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html">Report an Issue</a></li>
+          <li><a href="track-progress.html" class="active">Track Progress</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="track-progress">
+    <h2>Track Issue Progress</h2>
+    <p>View the status of reported issues in your area.</p>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <input type="text" placeholder="Enter Issue ID or Location" id="searchInput">
+      <button onclick="searchIssue()">Search</button>
+    </div>
+
+    <!-- Issues List -->
+    <div class="issue-list">
+      <div class="issue">
+        <h3>Issue ID: 12345</h3>
+        <p><strong>Location:</strong> Ekpo Abasi, Calabar.</p>
+        <p><strong>Status:</strong> In Progress</p>
+        <p><strong>Estimated Completion:</strong> 2024-11-15</p>
+      </div>
+
+      <div class="issue">
+        <h3>Issue ID: 67890</h3>
+        <p><strong>Location:</strong> Technical Community, Calabar.</p>
+        <p><strong>Status:</strong> Completed</p>
+        <p><strong>Completion Date:</strong> 2024-10-25</p>
+      </div>
+
+      <!-- Add more issues as needed -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Public Service Hub. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

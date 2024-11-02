@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --heading-font:'Noto Serif', Serif;
+    --paragraph-font:'Roboto', Serif;
+}
+
+
+
+/* Global Reset */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--heading-font);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/*navigation*/
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav .Navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .Navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .Navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 100, 70);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .Navigation ul li a:hover {
+  color: rgb(150, 202, 6);
+
+}
+
+/* Track Progress Page */
+.track-progress {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  .track-progress h2 {
+    color: rgb(21, 100, 70);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding: 4rem;
+  }
+  
+  .track-progress p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Search Section */
+  .search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .search-section input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-section button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: #ffd700;
+    color: #005a2d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-section button:hover {
+    background: #e6b800;
+  }
+  
+  /* Issues List */
+  .issue-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .issue {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .issue h3 {
+    font-size: 1.5rem;
+    color: #005a2d;
+    margin-bottom: 10px;
+  }
+  
+  .issue p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  /* Footer */
+  footer {
+    background: #00843d; 
+    color: #fff;
+    padding: 20px 10%;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  footer a {
+    color: #ffd700; /* Gold */
+    text-decoration: none;
+  }  

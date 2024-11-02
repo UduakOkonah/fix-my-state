@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --heading-font:'Noto Serif', Serif;
+    --paragraph-font:'Roboto', Serif;
+}
+
+
+
+/* Global Reset */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--heading-font);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/*navigation*/
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav .Navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .Navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .Navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 100, 70);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .Navigation ul li a:hover {
+  color: rgb(150, 202, 6);
+
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 10%;
+  background: linear-gradient(to right, #005a2d, #00843d); /* Dark green gradient */
+  color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.hero h1 {
+  padding: 1.5rem;
+  font-size: 2.5rem; 
+  font-family: var(--heading-font); 
+  margin-bottom: 15px; 
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  line-height: 1.5; /* Increased line height for better readability */
+}
+
+.cta {
+  margin-top: 30px;
+}
+
+.cta input {
+  padding: 12px; 
+  font-size: 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 300px; 
+  transition: border 0.3s; 
+}
+
+.cta input:focus {
+  border-color: #ffd700; /* Highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+.cta button {
+  padding: 12px 25px; /* Slightly larger button */
+  font-size: 1rem;
+  background: #ffd700; /* Gold button */
+  color: #005a2d; /* Dark green text */
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.cta button:hover {
+  background: #e6b800; /* Darker gold on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.how-it-works h2{
+  color:rgb(21, 100, 70);
+  font-size: 2rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.feature {
+  background: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+}
+
+.feature img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 10%;
+  background: #f0f0f0; /* Light Gray */
+  text-align: center;
+}
+
+.testimonials h2{
+  color:rgb(21, 100, 70);
+  font-size: 2rem;
+}
+
+.testimonials p{
+  font-family: var(--paragraph-font);
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+
+/* Profile Section */
+.profile-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.profile-section h2 {
+  color: rgb(21, 100, 70);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  color: #005a2d;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.profile-activity {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.profile-activity h3 {
+  color: #005a2d;
+  font-size: 1.5rem;
+}
+
+.profile-activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-activity li {
+  margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+  background: #00843d; 
+  color: #fff;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer a {
+  color: #ffd700; /* Gold */
+  text-decoration: none;
+}
